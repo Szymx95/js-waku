@@ -30,16 +30,10 @@ module.exports = {
     },
   },
   output: {
-    filename: '[name].js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'build/umd'),
     library: 'jswaku',
     libraryTarget: 'umd',
     globalObject: 'this',
-  },
-  optimization: {
-    splitChunks: {
-      name: 'vendors',
-      chunks: 'all',
-    }
   }
 };
